@@ -3,7 +3,7 @@ package model
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/dingyuanhong/gormt/data/config"
+	"github.com/xxjwxc/gormt/data/config"
 	"testing"
 )
 
