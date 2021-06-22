@@ -3,9 +3,9 @@ package gensqlite
 import (
 	"strings"
 
-	"github.com/xxjwxc/gormt/data/config"
+	"github.com/dingyuanhong/gormt/data/config"
 
-	"github.com/xxjwxc/gormt/data/view/model"
+	"github.com/dingyuanhong/gormt/data/view/model"
 )
 
 // filterModel filter.过滤 gorm.Model

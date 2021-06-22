@@ -7,6 +7,7 @@ import (
 
 	"github.com/xxjwxc/public/mylog"
 
+	"github.com/xxjwxc/public/mybigcamel"
 	"github.com/xxjwxc/public/dev"
 	"github.com/xxjwxc/public/tools"
 	"gopkg.in/yaml.v3"
@@ -49,6 +50,7 @@ var _map = Config{
 	TableNames:           "",
 	IsColumnName:         true,
 	IsOutFileByTableName: false,
+	TableIdCommons: []string{},
 }
 
 var configPath string
@@ -64,6 +66,10 @@ func init() {
 
 	onInit()
 	dev.OnSetDev(_map.IsDev)
+	
+	if len(_map.TableIdCommons) > 0 {
+		mybigcamel.SetCommon(_map.TableIdCommons)
+	}
 }
 
 func onInit() {

@@ -1,4 +1,4 @@
-module github.com/xxjwxc/gormt
+module github.com/dingyuanhong/gormt
 
 go 1.13
 
@@ -19,4 +19,4 @@ require (
 	gorm.io/gorm v1.21.4
 )
 
-// replace github.com/xxjwxc/public => ../public
+replace github.com/xxjwxc/public v0.0.0-20210611023445-d5fd9e893ee4 => github.com/dingyuanhong/public v0.0.0-20210622031456-86b2f55d3ff1
